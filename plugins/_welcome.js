@@ -7,8 +7,8 @@ export async function before(m, { conn, participants, groupMetadata }) {
   let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => 'https://files.catbox.moe/wm4w1x.jpg')
   let img = await (await fetch(`${pp}`)).buffer()
   let chat = global.db.data.chats[m.chat]
-  let txt = '💙 ¡Nueva Estrella Virtual! 💙'
-  let txt1 = '🎵 ¡Sayonara! 🎵'
+  let txt = '🐏 ¡Un Nuevo Pecador a Llegado ! 🐏'
+  let txt1 = '💫 ¡Hasta pronto! 💫'
   let groupSize = participants.length
   if (m.messageStubType == 27) {
     groupSize++;
@@ -17,11 +17,11 @@ export async function before(m, { conn, participants, groupMetadata }) {
   }
 
   if (chat.welcome && m.messageStubType == 27) {
-    let bienvenida = `🎤*¡Konnichiwa!* Bienvenido al concierto virtual de ${groupMetadata.subject}🎤\n\n💙 @${m.messageStubParameters[0].split`@`[0]} 💙\n\n🎵 ${global.welcom1} 🎵\n\n🌟 ¡Ahora somos ${groupSize} fanáticos de Miku! 🌟\n\n🎶 ¡Prepárate para cantar con nosotros! (◕‿◕)♡ 🎶\n\n> 🎤 Usa *#help* para ver todos los comandos mágicos de Miku! ✨\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> 𝙏𝙀𝙏𝙊 𝙂𝙊𝙍𝘿𝘼`    
+    let bienvenida = `♥️*¡Que onda!* Bienvenido al Bar el Dragon del Sol 🐉 ${groupMetadata.subject}🐏\n\n♥️ @${m.messageStubParameters[0].split`@`[0]} 🐏\n\n🐏 ${global.welcom1} ✨\n\n♥️ ¡Ahora somos ${groupSize} titeres de Gowther! 🦖\n\n🦖 ¡Prepárate para la lucha! (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)⁠❤ 📿\n\n> 📿 Usa *#help* para ver todos los pecados de Gowther! ✨\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> NADJA MI ESPOSA`    
     await conn.sendMini(m.chat, txt, dev, bienvenida, img, img, redes, fkontak, m, rcanal)
   }
   
   if (chat.welcome && (m.messageStubType == 28 || m.messageStubType == 32)) {
-    let bye = `🎵 *¡Sayonara!* ${groupMetadata.subject} te extrañará 🎵\n\n💙 @${m.messageStubParameters[0].split`@`[0]} 💙\n\n🎤 ${global.welcom2} 🎤\n\n🌟 Ahora somos ${groupSize} fanáticos esperándote 🌟\n\n🎶 ¡Esperamos verte pronto en nuestro próximo concierto! (｡◕‿◕｡) 🎶\n\n> 🎵 ¡La música de Miku siempre te acompañará! ✨\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> 𝙏𝙀𝙏𝙊 𝙂𝙊𝙍𝘿𝘼`
+    let bye = `✨ *¡Hasta pronto!* ${groupMetadata.subject} te esperara ♥️\n\n📿 @${m.messageStubParameters[0].split`@`[0]} 💜\n\n✨ ${global.welcom2} 🐏\n\n💫 Ahora somos ${groupSize} titeres esperandote 💜\n\n✨ ¡Esperamos verte pronto en la taberna del cerdo! (⁠｡⁠･⁠ω⁠･⁠｡⁠)⁠ﾉ⁠♡ 📿\n\n> 💜 ¡Tus pecados de seguiran! 🐏\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> NADJA MI ESPOSA`
     await conn.sendMini(m.chat, txt1, dev, bye, img, img, redes, fkontak, m, rcanal)
   }}
