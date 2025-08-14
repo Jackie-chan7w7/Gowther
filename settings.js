@@ -10,23 +10,23 @@ import moment from 'moment-timezone'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 
-global.botNumber = '' 
+global.botNumber = '527223618420' 
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
 // <-- Número @s.whatsapp.net -->
-  ['51988514570', '🎵 Brauliovh3 - Hatsune Miku Dev 🎵', true],
-  ['51988514570', '(ㅎㅊDEPOOLㅊㅎ)', true],
+  ['527223618420', '👑 VanessaVJSE- Gowther Dev 💖', true],
+  ['527223618420', '(ღ ᘜㄖ山ㄒ卄乇尺  ᰔᩚ)', true],
   
 // <-- Número @lid -->
-  ['141807421759536', '(ㅎㅊDEPOOLㅊㅎ)', true]
+  ['141807421759536', '(ღ ᘜㄖ山ㄒ卄乇尺  ᰔᩚ)', true]
 ];
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.mods = []
-global.suittag = ['51988514570'] 
+global.suittag = ['527223618420'] 
 global.prems = []
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -34,29 +34,29 @@ global.prems = []
 global.libreria = 'Baileys'
 global.baileys = 'V 6.7.17' 
 global.vs = '2.2.5'
-global.nameqr = '🎵 Hatsune-Miku-MD 🎵'
-global.namebot = '�💙 Ｈａｔｓｕｎｅ Ｍｉｋｕ Ｂｏｔ 💙�'
+global.nameqr = '💖 Gowther ✨V✨ 💖'
+global.namebot = '🐐💜 𝗚𝗼𝘄𝘁𝗵𝗲𝗿-𝗕𝗼𝘁 💜🐐'
 global.sessions = 'Sessions'
 global.jadi = 'JadiBots' 
 global.yukiJadibts = true
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = '🎤✨ 𝙃𝘼𝙏𝙎𝙐𝙉𝙀 𝙈𝙄𝙆𝙐 𝘽𝙊𝙏 ✨🎤'
-global.botname = '🄷🄰🅃🅂🅄🄽🄴 🄼🄸🄺🅄'
-global.wm = '🎵◟Hαƚsυɳҽ Mιƙυ◞🎵'
-global.author = '© (ㅎㅊDEPOOLㅊㅎ)'
-global.dev = '© 🄿🄾🅆🄴🅁🄴🄳 (ㅎㅊDEPOOLㅊㅎ)'
-global.textbot = '🎤✨ Hatsune Miku, la Diva Virtual del Futuro ✨🎤'
-global.etiqueta = '🎵 Ｍｉｋｕ Ｄｅｖ 🎵'
+global.packname = '👑💖 𝗚𝗢𝗪𝗧𝗛𝗘𝗥-𝗕𝗢𝗧 💖👑'
+global.botname = '🄶🄾🅆🅃🄷🄴🅁'
+global.wm = '🩷 ＧＯＷＴＨＥＲ 🩷'
+global.author = '© (ღ ᘜㄖ山ㄒ卄乇尺  ᰔᩚ)'
+global.dev = '© 🄿🄾🅆🄴🅁🄴🄳 (ღ ᘜㄖ山ㄒ卄乇尺  ᰔᩚ)'
+global.textbot = '🌟 Gowther la Cabra de la Lujuria 🌟'
+global.etiqueta = '📿 Gowther Ｄｅｖ 📿'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.moneda = '🎵 Mikucoins'
-global.welcom1 = '🎤💙 ¡Konnichiwa! Bienvenido al mundo virtual de Hatsune Miku! 💙🎤 \n✨ Aquí podrás disfrutar de la magia musical ✨ \n🎶 Edita este mensaje con setwelcome 🎶'
-global.welcom2 = '🌟💫 ¡Sayonara! Gracias por cantar con nosotros 💫🌟 \n🎵 ¡Esperamos verte pronto en el escenario virtual! 🎵 \n🎤 Edita este mensaje con setbye 🎤'
-global.banner = 'https://files.catbox.moe/t5iqh7.jpg'
-global.avatar = 'https://files.catbox.moe/t5iqh7.jpg'
+global.moneda = '💝 Marionetas'
+global.welcom1 = '💖 ¡Que hay! soy Gowther 💖 \n🐐 Espero serte de mucha ayuda en tu aventura  🐐 \n🌟 Edita este mensaje con setwelcome 🌟'
+global.welcom2 = '😴😇 ¡Hasta pronto! \n✨ ¡Esperamos verte pronto en la taberna del Cerdo! 🌟 \n👑 Edita este mensaje con setbye 🐐'
+global.banner = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJKKCegXpNu7QIIBxm8e0Zt1M09zp6SuXxDyREWVmUxbekP7_PAeBKa00&s=10'
+global.avatar = 'https://static.wikia.nocookie.net/nanatsu-no-taizai/images/0/0b/Gowther_%28anime%29.png/revision/latest?cb=20160109065758&path-prefix=es'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -64,8 +64,8 @@ global.gp1 = 'https://chat.whatsapp.com/FQ78boTUpJ7Ge3oEtn8pRE?mode=ac_t'
 global.comunidad1 = 'https://chat.whatsapp.com/FQ78boTUpJ7Ge3oEtn8pRE?mode=ac_t'
 global.channel = 'https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o'
 global.channel2 = 'https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o'
-global.md = 'https://github.com/Brauliovh3/HATSUNE-MIKU'
-global.correo = 'brauliovh3@gmail.com'
+global.md = 'https://github.com/Jackie-chan7w7/Gowther'
+global.correo = 'patita8669527@gmail.com'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
