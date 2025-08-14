@@ -8,18 +8,18 @@ var handler = async (m, { conn }) => {
 
     let time = global.db.data.users[m.sender].lastclaim + 86400000;
     if (new Date() - global.db.data.users[m.sender].lastclaim < 7200000) {
-        return conn.reply(m.chat, `🎵💙 *Todavía no es hora del siguiente concierto virtual...* 💙🎵\n\n✨ Vuelve en ${msToTime(time - new Date())} para reclamar tu recompensa musical diaria ✨`, m);
+        return conn.reply(m.chat, `💜🌟 *Todavía no es hora de la siguiente pelea...* 😍🤫\n\n😴 Vuelve en ${msToTime(time - new Date())} para reclamar tu recompensa medieval diaria ⚔️`, m);
     }
 
     global.db.data.users[m.sender].exp += exp;
-    conn.reply(m.chat, `🎤💙 *Recompensa Musical Diaria* 💙🎤
+    conn.reply(m.chat, `💖⚡ *Recompensa Medieval Diaria* 💖⚡
 
-🎵 Recursos del Concierto Virtual:
-✨ Experiencia Musical : *+${exp}*
-💎 Cristales Vocaloid : *+${d}*
-🎶 ${moneda} : *+${coin}*
+⛪ Recursos del Reino:
+⚡ Experiencia Espiritual : *+${exp}*
+🔮 Cristales Pecadores : *+${d}*
+🧸 ${moneda} : *+${coin}*
 
-¡Gracias por ser un fanático tan fiel! (｡♥‿♥｡)`, m);
+¡Gracias por ser pecador de corazón! (⁠〃ﾟ⁠3ﾟ⁠〃⁠)`, m);
 
     global.db.data.users[m.sender].lastclaim = Date.now();
 }
