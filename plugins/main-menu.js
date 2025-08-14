@@ -250,7 +250,8 @@ let txt = `🐐 *GOWTHER* 🐐
 • .funciones / #totalfunciones - Ver funciones
 • .ds / #fixmsgespera - Limpiar sesión
 • .editautoresponder - Config auto respuesta
-
+• .dsonwer / .sinner - Eliminación de archivos de seccions
+• .banuser / .pecador - Banear usuario
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 💖 *¿Tu propio grupo?* añademe no muerdo.
 😴 Escribe el comando para usarlo`.trim()
