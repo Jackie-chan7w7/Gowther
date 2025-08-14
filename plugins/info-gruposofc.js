@@ -2,24 +2,24 @@ import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix, command }) => {
 
-let grupos = `🎤💙 *¡Konnichiwa, querido fanático!* 💙🎤
+let grupos = `😇🐐 *¡Que hay, querida marioneta!* 😇🐐
 
-✨ Te invito a unirte a mis escenarios virtuales oficiales para disfrutar de conciertos increíbles con toda la comunidad Vocaloid... ✨
+📿 Te invito a unirte a mis reinos Digitales oficiales para disfrutar de las increibles comidas de Ban... 📿
 
-🎵 ${namegrupo}
-> *💙* ${gp1}
+🔮 ${namegrupo}
+> *💖* ${gp1}
 
 🌟 ${namecomu}
-> *💙* ${comunidad1}
+> *🧿* ${comunidad1}
 
-*🎤─💙─✨─🎵─💫─🎶─✨─💙─🎤*
+*📿─💜─⚡─🧿─🐐─🐉─🔮─⚔️─👑*
 
-🎵 ¿Enlace caducado? ¡Entra aquí para más información musical! 
+👑 ¿Enlace caducado? ¡Entra aquí para más información Espiritual! 
 
-💫 ${namechannel}
-> *💙* ${channel}
+💖 ${namechannel}
+> *💜* ${channel}
 
-> ${dev} 🎤✨`
+> ${dev} 🐐💖`
 
 await conn.sendFile(m.chat, catalogo, "grupos.jpg", grupos, m)
 
