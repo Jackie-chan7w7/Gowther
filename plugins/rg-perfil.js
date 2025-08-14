@@ -23,23 +23,22 @@ let handler = async (m, { conn, args }) => {
     let coins = user.coin || 0;
     let bankCoins = user.bank || 0;
 
-    let perfil = await conn.profilePictureUrl(userId, 'image').catch(_ => 'https://w7.pngwing.com/pngs/492/82/png-transparent-hatsune-miku-vocaloid-anime-animation-hatsune-miku-blue-fictional-characters-black-hair.png');
+    let perfil = await conn.profilePictureUrl(userId, 'image').catch(_ => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjbCywwyBdcPDM1t-54gkURq0t3Op0FdnTdcfa55SH7V-L_HCztVqxvAc&s=10.png');
 
     let profileText = `
-💙 *Perfil* ◢@${userId.split('@')[0]}◤
+🌟 *Perfil* ◢@${userId.split('@')[0]}◤
 ${description}
-
-🐱‍🏍 Edad » ${user.age || 'Desconocida'}
-🎉 *Cumpleaños* » ${cumpleanos}
+😍💌 Edad » ${user.age || 'Desconocida'}
+👑 *Cumpleaños* » ${cumpleanos}
 🚻 *Género* » ${genero}
 💍 *Casado con* » ${pareja}
 
-💫 *Experiencia* » ${exp.toLocaleString()}
+⚡ *Experiencia* » ${exp.toLocaleString()}
 📈 *Nivel* » ${nivel}
 🔌 Rango » ${role}
 
-💎 *Coins Cartera* » ${coins.toLocaleString()} ${moneda}
-🎫 *Coins Banco* » ${bankCoins.toLocaleString()} ${moneda}
+🐐 *Coins Cartera* » ${coins.toLocaleString()} ${moneda}
+🌠 *Coins Banco* » ${bankCoins.toLocaleString()} ${moneda}
 🔰 *Premium* » ${user.premium ? '✅' : '❌'}
   `.trim();
 
@@ -48,7 +47,7 @@ ${description}
         contextInfo: {
             mentionedJid: [userId],
             externalAdReply: {
-                title: '💙 Perfil de Usuario 💙',
+                title: '💜 Perfil del Pecador 💜',
                 body: dev,
                 thumbnailUrl: perfil,
                 mediaType: 1,
