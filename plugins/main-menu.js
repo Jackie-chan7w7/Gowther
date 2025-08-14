@@ -7,10 +7,10 @@ let uptime = clockString(_uptime)
 let totalreg = Object.keys(global.db.data.users).length
 let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length
     
-let txt = `✨ *HATSUNE MIKU BOT* ✨
-🎤 ¡Konnichiwa, @${userId.split('@')[0]}! 
+let txt = `🐐 *GOWTHER* 🐐
+😍 ¡Saludos, @${userId.split('@')[0]}! 
 
-💙 *Estado:* ${(conn.user.jid == global.conn.user.jid ? 'Principal ⚡️' : 'Sub-Bot 🔌')}
+💖 *Estado:* ${(conn.user.jid == global.conn.user.jid ? 'Principal 👑' : 'Sub-Bot 🔌')}
 ⏰ *Activo:* ${uptime}
 👥 *Usuarios:* ${totalreg}
 
@@ -252,8 +252,8 @@ let txt = `✨ *HATSUNE MIKU BOT* ✨
 • .editautoresponder - Config auto respuesta
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-💙 *¿Tu propio bot?* Usa .code
-✨ Escribe el comando para usarlo`.trim()
+💖 *¿Tu propio grupo?* añademe no muerdo.
+😴 Escribe el comando para usarlo`.trim()
 
 await conn.sendMessage(m.chat, { 
 text: txt,
