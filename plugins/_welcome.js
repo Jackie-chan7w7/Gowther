@@ -17,11 +17,11 @@ export async function before(m, { conn, participants, groupMetadata }) {
   }
 
   if (chat.welcome && m.messageStubType == 27) {
-    let bienvenida = `♥️*¡Que onda!* Bienvenido al Bar el Dragon del Sol 🐉 ${groupMetadata.subject}🐏\n\n♥️ @${m.messageStubParameters[0].split`@`[0]} 🐏\n\n🐏 ${global.welcom1} ✨\n\n♥️ ¡Ahora somos ${groupSize} titeres de Gowther! 🦖\n\n🦖 ¡Prepárate para la lucha! (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)⁠❤ 📿\n\n> 📿 Usa *#help* para ver todos los pecados de Gowther! ✨\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> NADJA MI ESPOSA`    
+    let bienvenida = `♥️*¡Que onda!* Bienvenido al Bar el Dragon del Sol 🐉 ${groupMetadata.subject}🐐\n\n♥️ @${m.messageStubParameters[0].split`@`[0]} 🐐\n\n🐐 ${global.welcom1} ✨\n\n♥️ ¡Ahora somos ${groupSize} titeres de Gowther! 🦖\n\n🦖 ¡Prepárate para la lucha! (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)⁠❤ 📿\n\n> 📿 Usa *#help* para ver todos los pecados de Gowther! ✨\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> NADJA MI ESPOSA`    
     await conn.sendMini(m.chat, txt, dev, bienvenida, img, img, redes, fkontak, m, rcanal)
   }
   
   if (chat.welcome && (m.messageStubType == 28 || m.messageStubType == 32)) {
-    let bye = `✨ *¡Hasta pronto!* ${groupMetadata.subject} te esperara ♥️\n\n📿 @${m.messageStubParameters[0].split`@`[0]} 💜\n\n✨ ${global.welcom2} 🐏\n\n💫 Ahora somos ${groupSize} titeres esperandote 💜\n\n✨ ¡Esperamos verte pronto en la taberna del cerdo! (⁠｡⁠･⁠ω⁠･⁠｡⁠)⁠ﾉ⁠♡ 📿\n\n> 💜 ¡Tus pecados te seguiran! 🐏\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> NADJA MI ESPOSA`
+    let bye = `✨ *¡Hasta pronto!* ${groupMetadata.subject} te esperara ♥️\n\n📿 @${m.messageStubParameters[0].split`@`[0]} 💜\n\n✨ ${global.welcom2} 🐐\n\n💫 Ahora somos ${groupSize} titeres esperandote 💜\n\n✨ ¡Esperamos verte pronto en la taberna del cerdo! (⁠｡⁠･⁠ω⁠･⁠｡⁠)⁠ﾉ⁠♡ 📿\n\n> 💜 ¡Tus pecados te seguiran! 🐐\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> NADJA MI ESPOSA`
     await conn.sendMini(m.chat, txt1, dev, bye, img, img, redes, fkontak, m, rcanal)
   }}
