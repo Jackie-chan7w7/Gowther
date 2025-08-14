@@ -23,7 +23,7 @@ const delay = time => new Promise(res=>setTimeout(res,time))
 
 switch (command) {
 
-case 'fantasmas': 
+case 'pecados fantasmales': 
 if(total == 0) return conn.reply(m.chat, `${emoji} Este grupo es activo, no tiene fantasmas.`, m) 
 m.reply(`${emoji} *Revisión de inactivos*\n\n${emoji2} *Lista de fantasmas*\n${sider.map(v => '@' + v.replace(/@.+/, '')).join('\n')}\n\n*📝 NOTA:*\nEsto no es al 100% acertado, el bot inicia el conteo de mensajes a partir de que se active en este número`, null, { mentions: sider }) 
 break
