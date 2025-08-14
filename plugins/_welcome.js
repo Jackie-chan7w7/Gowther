@@ -7,7 +7,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
   let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1lR8c_Yz-RM_GQTJFJc18W-VT7mxMVNHsRYgr1wj1USPmM4YiEgkHym0&s=10')
   let img = await (await fetch(`${pp}`)).buffer()
   let chat = global.db.data.chats[m.chat]
-  let txt = '🐏 ¡Un Nuevo Pecador a Llegado ! 🐏'
+  let txt = '🐐 ¡Un Nuevo Pecador a Llegado ! 🐐'
   let txt1 = '💫 ¡Hasta pronto! 💫'
   let groupSize = participants.length
   if (m.messageStubType == 27) {
@@ -22,6 +22,6 @@ export async function before(m, { conn, participants, groupMetadata }) {
   }
   
   if (chat.welcome && (m.messageStubType == 28 || m.messageStubType == 32)) {
-    let bye = `✨ *¡Hasta pronto!* ${groupMetadata.subject} te esperara ♥️\n\n📿 @${m.messageStubParameters[0].split`@`[0]} 💜\n\n✨ ${global.welcom2} 🐏\n\n💫 Ahora somos ${groupSize} titeres esperandote 💜\n\n✨ ¡Esperamos verte pronto en la taberna del cerdo! (⁠｡⁠･⁠ω⁠･⁠｡⁠)⁠ﾉ⁠♡ 📿\n\n> 💜 ¡Tus pecados de seguiran! 🐏\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> NADJA MI ESPOSA`
+    let bye = `✨ *¡Hasta pronto!* ${groupMetadata.subject} te esperara ♥️\n\n📿 @${m.messageStubParameters[0].split`@`[0]} 💜\n\n✨ ${global.welcom2} 🐏\n\n💫 Ahora somos ${groupSize} titeres esperandote 💜\n\n✨ ¡Esperamos verte pronto en la taberna del cerdo! (⁠｡⁠･⁠ω⁠･⁠｡⁠)⁠ﾉ⁠♡ 📿\n\n> 💜 ¡Tus pecados te seguiran! 🐏\n SIGUE NUESTRO CANAL \n https://www.whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o\n> NADJA MI ESPOSA`
     await conn.sendMini(m.chat, txt1, dev, bye, img, img, redes, fkontak, m, rcanal)
   }}
