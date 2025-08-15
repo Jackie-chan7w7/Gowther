@@ -32,7 +32,7 @@ const handler = async (m, { conn, text }) => {
     const users = global.db.data.users;
     users[who].exp += xp;
     
-    m.reply(`✨ XP Añadido: *${xp}* \n@${who.split('@')[0]}, recibiste ${xp} XP`, null, { mentions: [who] });
+    m.reply(`⚡ XP Añadido: *${xp}* \n@${who.split('@')[0]}, recibiste ${xp} XP`, null, { mentions: [who] });
 };
 
 handler.command = ['añadirxp', 'addexp'];
