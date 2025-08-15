@@ -19,7 +19,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         })
 
         if (!data.data.dl_url) throw "No se pudo obtener el enlace de descarga."
-        const info = `💙 Descargando *<${data.data.title}>*\n\n> 💫 Artista » *${data.data.artist}*\n> 💌 Album » *${data.data.album}*\n> ⏲ Duracion » *${data.data.duration}*\n> 🜸 Link » ${song.url}`
+        const info = `🩷 Descargando *<${data.data.title}>*\n\n> 💫 Artista » *${data.data.artist}*\n> 💌 Album » *${data.data.album}*\n> ⏲ Duracion » *${data.data.duration}*\n> 🜸 Link » ${song.url}`
 
         await conn.sendMessage(m.chat, { text: info, contextInfo: { forwardingScore: 9999999, isForwarded: false, 
         externalAdReply: {
