@@ -7,19 +7,19 @@ const handler = async (m, { conn }) => {
     const senderId = m.sender;
 
     if (salasRuleta[chatId]) 
-        return conn.reply(m.chat, '💙 Ya se encuentra una sala activa en este grupo, espera a que termine.', m);
+        return conn.reply(m.chat, '💖 Ya se encuentra una sala activa en este grupo, espera a que termine.', m);
 
     salasRuleta[chatId] = { jugadores: [senderId], estado: 'esperando' };
 
     await conn.sendMessage(m.chat, { 
-        text: `💀 *Ruleta de la Muerte* 💀\n\n@${senderId.split('@')[0]} inicio una sala de juego.\n> 💙 Para participar responde con *acepto* para entrar, Tiempo restante 60 segundos...`, 
+        text: `💀 *Ruleta de la Muerte* 💀\n\n@${senderId.split('@')[0]} inicio una sala de juego.\n> 💖 Para participar responde con *acepto* para entrar, Tiempo restante 60 segundos...`, 
         mentions: [senderId] 
     }, { quoted: m });
 
     await delay(60000);
     if (salasRuleta[chatId] && salasRuleta[chatId].estado === 'esperando') {
         delete salasRuleta[chatId];
-        await conn.sendMessage(m.chat, { text: '💙 Nadie aceptó el reto, la sala ha sido cerrada.' });
+        await conn.sendMessage(m.chat, { text: '💖 Nadie aceptó el reto, la sala ha sido cerrada.' });
     }
 };
 
@@ -37,10 +37,10 @@ handler.before = async (m, { conn }) => {
 
     if (texto === 'acepto' || texto === 'aceptar') {
         if (salasRuleta[chatId].jugadores.length >= 2) 
-            return conn.reply(m.chat, '💙 Ya se encuentran dos jugadores en esta sala.', m);
+            return conn.reply(m.chat, '💖 Ya se encuentran dos jugadores en esta sala.', m);
 
         if (senderId === salasRuleta[chatId].jugadores[0])
-            return conn.reply(m.chat, '💙 No puedes aceptar tu propio reto.', m);
+            return conn.reply(m.chat, '💖 No puedes aceptar tu propio reto.', m);
 
         salasRuleta[chatId].jugadores.push(senderId);
         salasRuleta[chatId].estado = 'completa';
@@ -52,7 +52,7 @@ handler.before = async (m, { conn }) => {
         });
 
         await conn.sendMessage(m.chat, { 
-            text: '💀 *Ruleta de la Muerte* 💀\n\n💙 ¡La sala está completa!\n\n> 🚂 Seleccionando al perdedor...' 
+            text: '💀 *Ruleta de la Muerte* 💀\n\n💖 ¡La sala está completa!\n\n> 🚂 Seleccionando al perdedor...' 
         });
 
         const loadingMessages = [
@@ -63,7 +63,7 @@ handler.before = async (m, { conn }) => {
             "《 ████████████》100%\n- ¡Resultado final!"
         ];
 
-        let { key } = await conn.sendMessage(m.chat, { text: "💙 ¡Calculando resultado!" }, { quoted: m });
+        let { key } = await conn.sendMessage(m.chat, { text: "💖 ¡Calculando resultado!" }, { quoted: m });
 
         for (let msg of loadingMessages) {
             await delay(3000);
@@ -74,14 +74,14 @@ handler.before = async (m, { conn }) => {
         const perdedor = Math.random() < 0.5 ? jugador1 : jugador2;
 
         await conn.sendMessage(m.chat, { 
-            text: `💙 *Veredicto final* ✦\n\n@${perdedor.split('@')[0]} ha sido el perdedor.\n\n> 💙 Tiene 60 segundos para tus últimas palabras...`, 
+            text: `💖 *Veredicto final* ✦\n\n@${perdedor.split('@')[0]} ha sido el perdedor.\n\n> 💔 Tiene 60 segundos para tus últimas palabras...`, 
             mentions: [perdedor] 
         });
 
         await delay(60000);        
             await conn.groupParticipantsUpdate(m.chat, [perdedor], 'remove');
             await conn.sendMessage(m.chat, { 
-                text: `💙 @${perdedor.split('@')[0]} ha sido eliminado. Fin del juego.`, 
+                text: `💔 @${perdedor.split('@')[0]} ha sido eliminado. Fin del juego.`, 
                 mentions: [perdedor] 
             });        
         delete salasRuleta[chatId];
@@ -89,6 +89,6 @@ handler.before = async (m, { conn }) => {
 
     if (texto === 'rechazar' && senderId === salasRuleta[chatId].jugadores[0]) {
         delete salasRuleta[chatId];
-        await conn.sendMessage(m.chat, { text: '💙 El juego ha sido cancelado por el retador.' });
+        await conn.sendMessage(m.chat, { text: '👑 El juego ha sido cancelado por el retador.' });
     }
 };
