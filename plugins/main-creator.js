@@ -11,16 +11,16 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let name = await conn.getName(who)
 
     
-    const nomorown = '51988514570' 
-    const dev = 'Desarrollador del bot' 
-    const correo = 'velasquezhuillcab@gmail.com' 
-    const packname = '💙Hatsune Miku Bot💙' 
-    const md = 'https://github.com/Brauliovh3' 
+    const nomorown = '527223618420' 
+    const dev = 'Desarrolladora del bot' 
+    const correo = 'patita8669527@gmail.com' 
+    const packname = '🐐 Gowther Bot 🐐' 
+    const md = 'https://github.com/Jackie-chan7w7/Gowther' 
     const global = { yt: 'https://youtube.com' } 
 
     await sendContactArray(conn, m.chat, [
-        [`${nomorown}`, `💙 Propietario`, `(ㅎㅊDEPOOLㅊㅎ)`, dev, correo, `BVH3`, `${global.yt}`, bio],
-        [`${conn.user.jid.split('@')[0]}`, `Es Una Bot 💙`, `${packname}`, `📵 No Hacer Spam`, correo, `BVH3`, md, biobot]
+        [`${nomorown}`, `💖 Propietario`, `(ღ ᘜㄖ山ㄒ卄乇尺  ᰔᩚ)`, dev, correo, `VJSE`, `${global.yt}`, bio],
+        [`${conn.user.jid.split('@')[0]}`, `Es Un Bot 💖`, `${packname}`, `📵 No Hacer Spam`, correo, `VJSE`, md, biobot]
     ], m)
 }
 
