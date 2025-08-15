@@ -11,18 +11,18 @@ let gold = pickRandom([20, 5, 7, 8, 88, 40, 50]);
 let coal = pickRandom([20, 5, 7, 8, 88, 40, 50, 80, 70, 60, 100, 120, 600, 700, 64]);
 let stone = pickRandom([200, 500, 700, 800, 900, 4000, 300]);
 
-let img = 'https://qu.ax/HiPSu.jpg';
+let img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx0WTW8CpXo0A-8cfBEetlGgwerrr-2efnEbS1OABhm4o6T7C5w_dSPA4&s=10.png';
 let time = user.lastmiming + 600000;
 
 if (new Date() - user.lastmiming < 600000) {
-return conn.reply(m.chat, `💙 Debes esperar ${msToTime(time - new Date())} para volver a minar en el mundo virtual. 🎵`, m, rcanal);
+return conn.reply(m.chat, `💜 Debes esperar ${msToTime(time - new Date())} para volver a minar en el reino virtual. 😇`, m, rcanal);
 }
 
 let hasil = Math.floor(Math.random() * 1000);
 let info = `⛏️ *Te has adentrando en lo profundo de las cuevas*\n\n` +
-`> *💙 Obtuviste estos recursos*\n\n` +
-`✨ *Exp*: ${hasil}\n` +
-`💸 *${moneda}*: ${coin}\n` +
+`> *💖 Obtuviste estos recursos*\n\n` +
+`⚡ *Exp*: ${hasil}\n` +
+`🧸 *${moneda}*: ${coin}\n` +
 `♦️ *Esmeralda*: ${emerald}\n` +
 `🔩 *Hierro*: ${iron}\n` +
 `🏅 *Oro*: ${gold}\n` +
@@ -30,7 +30,7 @@ let info = `⛏️ *Te has adentrando en lo profundo de las cuevas*\n\n` +
 `🗻 *Piedra*: ${stone}`;
 
 await conn.sendFile(m.chat, img, 'yuki.jpg', info, fkontak);
-await m.react('⛏️');
+await m.react('💎');
 
 user.health -= 50;
 user.pickaxedurability -= 30;
