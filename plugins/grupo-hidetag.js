@@ -4,7 +4,7 @@ import * as fs from 'fs'
 
 var handler = async (m, { conn, text, participants, isOwner, isAdmin }) => {
 
-if (!m.quoted && !text) return conn.reply(m.chat, `🎤💙 Debes enviar un mensaje musical para notificar a todos los fanáticos del concierto ✨`, m)
+if (!m.quoted && !text) return conn.reply(m.chat, `💖🐐 Debes enviar un mensaje ansestral para notificar a todos los pecadores del reino 👑`, m)
 
 try { 
 
@@ -26,7 +26,7 @@ let mime = (quoted.msg || quoted).mimetype || ''
 let isMedia = /image|video|sticker|audio/.test(mime)
 let more = String.fromCharCode(8206)
 let masss = more.repeat(850)
-let htextos = `${text ? text : "🎤💙 *¡¡¡Konnichiwa fanáticos!!!* 💙🎤\n\n✨ Hay un anuncio especial en nuestro concierto virtual ✨"}`
+let htextos = `${text ? text : "🐐💖 *¡¡¡Que onda Putitos!!!* 🐐💖\n\n🌠 Hay un anuncio especial en nuestra taberna virtual 🐉"}`
 if ((isMedia && quoted.mtype === 'imageMessage') && htextos) {
 var mediax = await quoted.download?.()
 conn.sendMessage(m.chat, { image: mediax, mentions: users, caption: htextos, mentions: users }, { quoted: null })
