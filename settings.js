@@ -55,8 +55,8 @@ global.etiqueta = '📿 Gowther Ｄｅｖ 📿'
 global.moneda = '💝 Marionetas'
 global.welcom1 = '💖 ¡Que hay! soy Gowther 💖 \n🐐 Espero serte de mucha ayuda en tu aventura  🐐 \n🌟 Edita este mensaje con setwelcome 🌟'
 global.welcom2 = '😴😇 ¡Hasta pronto! \n✨ ¡Esperamos verte pronto en la taberna del Cerdo! 🌟 \n👑 Edita este mensaje con setbye 🐐'
-global.banner = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJKKCegXpNu7QIIBxm8e0Zt1M09zp6SuXxDyREWVmUxbekP7_PAeBKa00&s=10.png'
-global.avatar = 'https://static.wikia.nocookie.net/nanatsu-no-taizai/images/0/0b/Gowther_%28anime%29.png/revision/latest?cb=20160109065758&path-prefix=es.png'
+global.banner = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2E75hPwD-45706eWBxbcppMkfjnK02Qk1tCYYmQfABTwPiTjTjiJe-BK&s=10.png'
+global.avatar = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9rIwlEnrxbyemvbtbokz7Rd5DC_1wqavseFCThNPmFwcCsGIQoHetKqtb&s=10.png'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
