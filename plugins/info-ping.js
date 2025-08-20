@@ -3,13 +3,13 @@ import { spawn, exec, execSync } from 'child_process'
 
 let handler = async (m, { conn }) => {
 let timestamp = speed()
-let sentMsg = await conn.reply(m.chat, '🎤💙 Sincronizando frecuencias virtuales... ✨', m)
+let sentMsg = await conn.reply(m.chat, '💖🐐 Sincronizando frecuencias Demoniacas... 🤫', m)
 let latency = speed() - timestamp
 exec(`neofetch --stdout`, (error, stdout, stderr) => {
 let child = stdout.toString("utf-8");
 let ssd = child.replace(/Memory:/, "Ram:")
 
-let result = `🎵✨ *¡Miku Pong!* ✨🎵\n💙 Latencia del Escenario Virtual ⴵ ${latency.toFixed(4).split(".")[0]}ms 💙\n${ssd}`
+let result = `💜🐐 *¡Gowther Pong!* 🌠⚡\n🌟 Latencia de la Taberna Virtual ⴵ ${latency.toFixed(4).split(".")[0]}ms 💜\n${ssd}`
 conn.sendMessage(m.chat, { text: result, edit: sentMsg.key }, { quoted: m })
 })
 }
